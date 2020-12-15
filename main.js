@@ -75,7 +75,7 @@ app.get("/search/:asin", async function (req, res) {
 
 // Start server
 if (!module.parent) {
-  const port = 3333;
+  const port = process.env.PORT || 3333;
   app.listen(port);
   console.log(
     `Express started, search via. http://localhost:${port}/search/{ASIN}`
