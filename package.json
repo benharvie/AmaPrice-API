@@ -1,0 +1,33 @@
+{
+  "name": "amaprice",
+  "version": "1.0.0",
+  "description": "Amazon global price comparison application",
+  "main": "main.js",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "postcss": "^8.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benharvie/AmaPrice-API.git"
+  },
+  "keywords": [
+    "amazon",
+    "global",
+    "price",
+    "comparison",
+    "api"
+  ],
+  "author": "Ben Harvie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benharvie/AmaPrice-API/issues"
+  },
+  "homepage": "https://github.com/benharvie/AmaPrice-API#readme"
+}
