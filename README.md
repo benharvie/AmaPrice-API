@@ -1,6 +1,6 @@
 # AmaPrice API
 
-Amazon global price comparison API. Save money by finding deals across other parts of the world through Amazon, with a Prime membership, shipping will still be free!
+Amazon global price comparison API. AmaPrice will scrape Amazon's domains for all of their prices globally, as they vary from country to country, allowing you to compare for the best price. With a Prime membership shipping will be free, saving some 💰!
 
 Supports:
 
@@ -23,7 +23,7 @@ Supports:
 
 The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Nescaf%C3%A9-Dolce-Gusto-Jovia-DeLonghi/dp/B00J5ERXZM/`, after the `/dp/` route. In this example the ASIN would be `B00J5ERXZM`.
 
-Alternatively, the ASIN is often listed in the `Product Details` section at the bottom of the Amazon product's page.
+Alternatively, the ASIN is often listed in the `Additional Information` section at the bottom of the Amazon product's page.
 
 ## Live Demo
 
