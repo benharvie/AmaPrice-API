@@ -15,9 +15,9 @@ Supports:
 
 1. Install dependencies: `npm i`
 
-2. Start the server: `node main.js`
+2. Start the server: `npm start`
 
-3. Search for prices via. Amazon ASIN number via. http://localhost:3000/search/{ASIN}
+3. Search for prices via. Amazon ASIN number via. http://localhost:3333/search/{ASIN}
 
 ## How to find the ASIN
 
