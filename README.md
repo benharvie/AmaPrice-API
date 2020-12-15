@@ -13,17 +13,15 @@ Supports:
 
 ## Usage
 
-1. Install dependencies:\
-   `npm i`
+1. Install dependencies: `npm i`
 
-2. Start the server\
-   `node main.js`
+2. Start the server: `node main.js`
 
 3. Search for prices via. Amazon ASIN number via. http://localhost:3000/search/{ASIN}
 
 ## How to find the ASIN
 
-The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Nescaf%C3%A9-Dolce-Gusto-Jovia-DeLonghi/dp/B00J5ERXZM/`, after the `/dp/` route. In this example the ASIN would be `B00J5ERXZM`.\\
+The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Nescaf%C3%A9-Dolce-Gusto-Jovia-DeLonghi/dp/B00J5ERXZM/`, after the `/dp/` route. In this example the ASIN would be `B00J5ERXZM`.
 
 Alternatively, the ASIN is often listed in the `Product Details` section at the bottom of the Amazon product's page.
 
