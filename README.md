@@ -1,9 +1,6 @@
 # AmaPrice API
 
-Amazon global price comparison API. AmaPrice will scrape Amazon's domains for all of their prices globally, as they vary from country to country, allowing you to compare for the best price. With a Prime membership shipping will be free, saving some 💰!
-
 Supports:
-
 - .co.uk
 - .fr
 - .it
@@ -13,9 +10,9 @@ Supports:
 
 ## Usage
 
-1. Install dependencies: `npm i`
+1. Install dependencies `npm i`
 
-2. Start the server: `npm start`
+2. Start the server `npm start`
 
 3. Search for prices via. Amazon ASIN number via. http://localhost:3333/search/{ASIN}
 
