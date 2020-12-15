@@ -1,5 +1,7 @@
 # AmaPrice API
 
+Amazon global price comparison API. AmaPrice will scrape Amazon's domains for all of their prices globally, as they vary from country to country, allowing you to compare for the best price. With a Prime membership shipping will be free, saving some 💰!
+
 Supports:
 - .co.uk
 - .fr
