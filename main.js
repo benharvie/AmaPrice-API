@@ -27,11 +27,11 @@ async function getPrice(asin) {
   return await Promise.all(
     domains.map((domain) =>
       fetch(
-        `https://www.amazon${domain}/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=${asin}&Quantity.1=1`
+        `https://www.amazon${domain}/gp/aws/cart/add.html?ASIN.1=${asin}&Quantity.1=1`
       )
         .then((response) => response.text())
         .then((htmlResponse) => {
-          const url = `https://www.amazon${domain}/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=${asin}&Quantity.1=1`;
+          const url = `https://www.amazon${domain}/gp/aws/cart/add.html?ASIN.1=${asin}&Quantity.1=1`;
           // Parse HTML response for price text
           const unsanitizedPrice = htmlResponse
             .split('<td nowrap class="price item-row" valign="top">')[1]
