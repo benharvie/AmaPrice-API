@@ -11,10 +11,6 @@ Supports:
 - .de
 - .nl
 
-## Live Demo
-
-http://amaprice.herokuapp.com/search/B00J5ERXZM
-
 ## Usage
 
 1. Install dependencies `npm i`
@@ -25,9 +21,14 @@ http://amaprice.herokuapp.com/search/B00J5ERXZM
 
 ## How to find the ASIN
 
-The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Anker-PowerCore-Slim-10000-Brown/dp/B07ZFM4L77/`, after the `/dp/` route. In this example the ASIN would be `B07ZFM4L77`.
+The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Nescaf%C3%A9-Dolce-Gusto-Jovia-DeLonghi/dp/B00J5ERXZM/`, after the `/dp/` route. In this example the ASIN would be `B00J5ERXZM`.
 
 Alternatively, the ASIN is often listed in the `Product Details` section at the bottom of the Amazon product's page.
+
+## Live Demo
+
+Live Demo: http://amaprice.herokuapp.com/search/B00J5ERXZM
+Product Example: https://www.amazon.co.uk/Nescaf%C3%A9-Dolce-Gusto-Jovia-DeLonghi/dp/B00J5ERXZM/
 
 ## Example Output
 
@@ -36,22 +37,26 @@ Alternatively, the ASIN is often listed in the `Product Details` section at the 
   "priceList": [
     {
       "domain": ".co.uk",
-      "price": "£29.99"
+      "url": "https://www.amazon.co.uk/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=B00J5ERXZM&Quantity.1=1",
+      "price": "£69.99"
     },
     {
       "domain": ".fr",
-      "price": "£64.49"
+      "price": "£29.99"
     },
     {
       "domain": ".it",
-      "price": "£58.76"
+      "url": "https://www.amazon.it/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=B00J5ERXZM&Quantity.1=1",
+      "price": "£69.29"
     },
     {
       "domain": ".es",
-      "price": "£69.19"
+      "url": "https://www.amazon.es/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=B00J5ERXZM&Quantity.1=1",
+      "price": "£67.49"
     },
     {
       "domain": ".de",
+      "url": "https://www.amazon.de/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=B00J5ERXZM&Quantity.1=1",
       "price": "£70.19"
     },
     {

@@ -27,10 +27,11 @@ async function getPrice(asin) {
   return await Promise.all(
     domains.map((domain) =>
       fetch(
-        `https://www.amazon${domain}/gp/aws/cart/add.html?AssociateTag=your_tag&ASIN.1=${asin}&Quantity.1=1`
+        `https://www.amazon${domain}/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=${asin}&Quantity.1=1`
       )
         .then((response) => response.text())
         .then((htmlResponse) => {
+          const url = `https://www.amazon${domain}/gp/aws/cart/add.html?AssociateTag=x&ASIN.1=${asin}&Quantity.1=1`;
           // Parse HTML response for price text
           const unsanitizedPrice = htmlResponse
             .split('<td nowrap class="price item-row" valign="top">')[1]
@@ -45,9 +46,17 @@ async function getPrice(asin) {
               ) * 0.9
             ) // Current rate, 1.00 EUR === 0.90 GBP
               .toFixed(2);
-            return { domain, price: `£${sanitizedPrice}` };
+            return {
+              domain,
+              url,
+              price: `£${sanitizedPrice}`,
+            };
           } else {
-            return { domain, price: unsanitizedPrice };
+            return {
+              domain,
+              url,
+              price: unsanitizedPrice,
+            };
           }
         })
         .catch(() => {
