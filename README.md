@@ -29,7 +29,7 @@ Alternatively, the ASIN is often listed in the `Product Details` section at the 
 
 ## Live Demo
 
-Live Demo: http://amaprice.herokuapp.com/search/B00J5ERXZM
+http://amaprice.herokuapp.com/search/B00J5ERXZM
 
 ## Example Output
 
