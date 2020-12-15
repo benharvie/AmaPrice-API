@@ -19,8 +19,6 @@ Supports:
 
 3. Search for prices via. Amazon ASIN number via. http://localhost:3000/search/{ASIN}
 
----
-
 ## How to find the ASIN
 
 The ASIN is a unique 10 character long string, that begins with the letter `B`. It can be found in the Amazon URL directly, eg. `https://www.amazon.co.uk/Anker-PowerCore-Slim-10000-Brown/dp/B07ZFM4L77/`, after the `/dp/` route. In this example the ASIN would be `B07ZFM4L77`.
