@@ -40,6 +40,7 @@ http://amaprice.herokuapp.com/search/B00J5ERXZM
     },
     {
       "domain": ".fr",
+      "url": "https://www.amazon.fr/gp/aws/cart/add.html?ASIN.1=B00J5ERXZM&Quantity.1=1",
       "price": "£29.99"
     },
     {
