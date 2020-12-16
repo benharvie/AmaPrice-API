@@ -63,7 +63,7 @@ async function getPrice(asin) {
           return { domain, price: null };
         })
     )
-  ).then((priceList) => JSON.stringify({ priceList }));
+  ).then((priceList) => JSON.stringify({ priceList }, null, "\t"));
 }
 
 const app = express();
