@@ -60,7 +60,7 @@ async function getPrice(asin) {
           }
         })
         .catch(() => {
-          return { domain, price: null };
+          return { domain, url: null, price: null };
         })
     )
   ).then((priceList) => JSON.stringify({ priceList }, null, 4));
